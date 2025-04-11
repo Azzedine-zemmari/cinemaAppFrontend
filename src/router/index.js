@@ -1,10 +1,13 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Login from "../views/Login.vue";
 import Home from "@/views/Home.vue";
+import { compile } from "vue";
+import FilmDetail from "@/components/FilmDetail.vue";
 
 const routes = [
   { path: "/login", component: Login },
-  { path: "/", component: Home,name:Home}
+  { path: "/", component: Home,name:Home},
+  {path : "/film/:id",component:FilmDetail,name:FilmDetail}
 ];
 
 const router = createRouter({

@@ -36,7 +36,7 @@
                 </div>
                 <div v-if="loading">Loading movies...</div>
                 <div v-else class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-                    <MovieCard v-for="movie in films" :key="movie.id" :title="movie.titre" :image="movie.image"
+                    <MovieCard v-for="movie in films" :id="movie.id" :key="movie.id" :title="movie.titre" :image="movie.image"
                     :duration="movie.duree" />
                 </div>
             </div>
