@@ -8,8 +8,8 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(), // Uses hash mode
-  routes
+    history: createWebHashHistory(), // Uses hash mode
+    routes
 });
 
 export default router;
